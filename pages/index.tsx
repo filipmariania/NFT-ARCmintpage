@@ -234,7 +234,7 @@ const Home: NextPage = () => {
               />
               <div>
                 {/* Powered by thirdweb */}{" "}
-                <a href="https://goerli.etherscan.io/address/0x44ea9ed1d488c41bd80e056df2619f4d917a2d6b" target="_blank" rel="no-referer">0x44ea...2d6b</a>
+                <a href="https://goerli.etherscan.io/address/0x44ea9ed1d488c41bd80e056df2619f4d917a2d6b" target="_blank" rel="noreferrer">0x44ea...2d6b</a>
               </div>
 
               {/* Amount claimed so far */}
