@@ -1,0 +1,190 @@
+.container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.previewImage {
+  height: 512px;
+  width: 512px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  padding: 3px;
+}
+
+.mintInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 3px;
+  min-height: 45vw;
+  max-width: 42vw;
+  gap: 1%;
+  border: 3px solid var(--border-color);
+  border-radius: 18px;
+  margin-bottom: 9px;
+}
+
+.infoSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66%;
+  height: 15vw;
+}
+
+.description {
+  opacity: 0.99;
+  font-size: fit-content;
+}
+
+.imageSide {
+  width: 99%;
+  height: 99%;
+}
+
+.image {
+  image-rendering: pixelated;
+  width: 33%;
+  border-radius: 12px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin: 3px 0;
+}
+
+.mainButton {
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  height: 1rem;
+  min-width: 3rem;
+  font-size: 1rem;
+  background: #e5e5ea;
+  background-image: linear-gradient(
+    to left,
+    var(--color-primary) 0%,
+    var(--color-secondary) 101.52%
+  );
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  border-radius: 9999px;
+  border-style: none;
+  margin-top: 9px;
+}
+
+.mainButton:hover {
+  opacity: 0.9;
+}
+
+.mintCompletionArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mintAreaLeft {
+  margin-left: 36%;
+  opacity: 0.78;
+}
+
+.mintAreaRight {
+  margin-right: 36%;
+  opacity: 0.78;
+}
+
+.spacerTop {
+  margin-top: 3px;
+}
+
+.spacerBottom {
+  margin-bottom: 3px;
+}
+
+.buttonGapTop {
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.quantityContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6%;
+}
+
+.mintContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 9%;
+  margin-top: 9px;
+}
+
+.textInput {
+  width: 45px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 9px;
+  color: #fff;
+  height: 45px;
+  padding: 0 18px;
+  font-size: 1.2rem;
+}
+
+.quantityControlButton {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: fit-content;
+  background-color: transparent;
+  border: 3px solid grey;
+  color: #fff;
+}
+
+.quantityControlButton:disabled {
+  opacity: 0.12;
+}
+
+/* On mobile, make the .mintInfoContainer stack vertically */
+@media screen and (max-width: 850px) {
+  .mintInfoContainer {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+
+  .infoSide {
+    width: 100%;
+  }
+
+  .imageSide {
+    width: 100%;
+  }
+}
